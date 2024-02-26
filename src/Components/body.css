@@ -1,0 +1,96 @@
+.plusIcon {
+    font-size: 45px;
+    color: #e35843;
+    position: relative;
+    left: 49vw;
+    top: 6vh;
+    transition: transform 1s ease-in-out, filter 0.3s ease-in-out;
+    z-index: 1;
+}
+.plusIcon:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+.plusIcon.clicked {
+    transform: translateX(28vw) rotate(45deg);
+}
+
+.questionBlock {
+    position: relative;
+    background-color: rgb(252, 201, 201);
+    border-radius: 15px;
+    box-shadow: rgba(139, 96, 96, 0.35) 0px 5px 15px;
+    width: 60vw;
+    margin: 1vh 20vw 0 20vw;
+}
+
+.questionBlock-transition-enter {
+    opacity: 0;
+    height: 0vh;
+}
+.questionBlock-transition-enter-active {
+    opacity: 1;
+    height: 45vh;
+    transition: height 500ms ease-in-out, opacity  700ms ease-in;
+}
+.questionBlock-transition-enter-done {
+    opacity: 1;
+    height: 45vh;
+}
+.questionBlock-transition-exit {
+    height: 45vh;
+    opacity: 1;
+}
+
+.questionBlock-transition-exit-active {
+    height: 0vh;
+    opacity: 0;
+    transition: height 700ms ease-in-out, opacity  500ms ease-out;
+}
+.questionBlock-transition-exit-done {
+    height: 0vh;
+    opacity: 0;
+}
+
+.mainForm{
+    padding: 20px 40px 20px 40px;
+}
+.questionInput{
+    height: 5vh;
+    margin-top: 2vh;
+}
+.formTitle{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+}
+.answerGroup{
+    justify-content: center;
+}
+.answerGroup .answerBox{
+    width: 20vw;
+    height: 6vh;
+    margin: 30px 60px 0 60px;
+}
+.mainForm .submitBtn{
+    position: relative;
+    left: 22vw;
+    top: 4vh;
+    width: 12vw;
+    height: 8vh;
+    font-weight: bold;
+    font-size: 23px;
+}
+.closeIcon {
+    position: relative;
+    left: 78vw;
+    top: 9vh;
+    font-size: 25px;
+    z-index: 3;
+}
+.closeIcon:hover{
+    cursor: pointer;
+    filter: brightness(1.7);
+}

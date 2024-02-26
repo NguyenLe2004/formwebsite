@@ -1,0 +1,12 @@
+.head {
+    text-align: center;
+    background-image: linear-gradient(to top right, #FA8072	, #F6DDCC);
+    height: 14vh;
+}
+.headTitle{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 20px;
+    color: #6E2C00;
+}
